@@ -6,12 +6,14 @@ model PrescribedSolarRad "variable radiation condition"
   parameter Modelica.SIunits.RadiantEnergyFluenceRate I[n] = fill(0, n)
     "fixed radiation if u is not connected"                                                                     annotation(Diagram(graphics));
 equation
-  if cardinality(u) < 1 then
-    u[:] = fill(0, n);
-    solarRad_out[:].I = I[:];
-  else
-    solarRad_out[:].I = u[:] "Radiant energy fluence rate";
-  end if;
+  for i in 1:n loop
+    if cardinality(u[i]) < 1 then
+      u[i] = 0.0;
+      solarRad_out[i].I = I[i];
+    else
+      solarRad_out[i].I = u[i] "Radiant energy fluence rate";
+    end if;
+  end for;
   annotation(Icon(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics = {Line(points=  {{0, 80}, {0, -80}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Line(points=  {{80, 0}, {-80, 0}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Line(points=  {{-68, 42}, {68, -42}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Line(points=  {{-38, 70}, {38, -70}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Line(points=  {{-68, -42}, {68, 42}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Line(points=  {{-40, -70}, {40, 70}}, color=  {255, 170, 85}, pattern=  LinePattern.Dot, thickness=  0.5), Ellipse(extent=  {{-60, 60}, {60, -60}}, lineColor=  {0, 0, 0}, pattern=  LinePattern.None, fillPattern=  FillPattern.Sphere, fillColor=  {255, 255, 0})}), Documentation(revisions = "<html>
  <ul>
  <li><i>April 01, 2014 </i> by Moritz Lauster:<br>Renamed</li>

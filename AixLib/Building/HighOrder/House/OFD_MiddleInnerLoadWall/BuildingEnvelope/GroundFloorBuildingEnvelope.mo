@@ -118,7 +118,6 @@ equation
   connect(Corridor.thermRoom, thermCorridor) annotation(Line(points = {{66, -5.2}, {66, -32}, {90, -32}, {90, 100}, {110, 100}, {110, 110}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Hobby.starRoom, StarHobby) annotation(Line(points = {{61.2, 56.8}, {61.2, 44}, {36, 44}, {36, 40}, {20, 40}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(Corridor.starRoom, StarCorridor) annotation(Line(points = {{58, -5.2}, {58, -20}, {0, -20}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
-  connect(StarWC_Storage, StarWC_Storage) annotation(Line(points = {{20, -60}, {20, -60}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(Corridor.thermRoom, ThermCorridor) annotation(Line(points = {{66, -5.2}, {66, 14}, {36, 14}, {36, 0}, {0, 0}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Hobby.thermRoom, ThermHobby) annotation(Line(points = {{69.18, 56.8}, {69.18, 44}, {36, 44}, {36, 60}, {20, 60}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(ThermLivingroom, Livingroom.thermRoom) annotation(Line(points = {{-20, 60}, {-32, 60}, {-32, 48}, {-68.4, 48}, {-68.4, 52.4}}, color = {191, 0, 0}, smooth = Smooth.None));

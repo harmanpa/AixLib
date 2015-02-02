@@ -75,7 +75,6 @@ equation
   connect(Wall_Ceiling.port_outside, thermCeiling) annotation(Line(points = {{80, -69.9}, {80, -48}, {100, -48}, {100, -130}, {-100, -130}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Wall_Floor.port_outside, thermFloor) annotation(Line(points = {{80, -102.1}, {80, -120}, {-60, -120}, {-60, -150}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(infiltrationRate.port_b, airload.port) annotation(Line(points = {{-18, 84}, {-12, 84}, {-12, 60}, {-56, 60}, {-56, 10}, {-40, 10}, {-40, -8}, {-35, -8}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermCeiling, thermCeiling) annotation(Line(points = {{-100, -130}, {-100, -130}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(infiltrationRate.port_a, thermOutside) annotation(Line(points = {{-42, 84}, {-98, 84}, {-98, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(thermStar_Demux.star, StarRoom) annotation(Line(points = {{-19.6, -45.8}, {-12, -45.8}, {-12, -38}, {6, -38}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(airload.port, thermStar_Demux.therm) annotation(Line(points = {{-35, -8}, {-40, -8}, {-40, -20}, {-12, -20}, {-12, -34.9}, {-19.9, -34.9}}, color = {191, 0, 0}, smooth = Smooth.None));

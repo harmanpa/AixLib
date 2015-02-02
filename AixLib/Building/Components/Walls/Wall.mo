@@ -121,7 +121,6 @@ equation
     connect(Sunblind.Rad_In[1], SolarRadiationPort) annotation(Line(points = {{-42.85, -7.7}, {-81, -7.7}, {-81, 89}, {-106, 89}}, color = {255, 128, 0}, smooth = Smooth.None));
   end if;
   connect(heatStarToComb.thermStarComb, thermStarComb_inside) annotation(Line(points = {{78.4, -1.1}, {78.4, -1.05}, {102, -1.05}, {102, 0}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(port_outside, port_outside) annotation(Line(points = {{-98, 4}, {-98, 4}}, color = {191, 0, 0}, pattern = LinePattern.None, smooth = Smooth.None));
   annotation(Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}, grid = {1, 1}), graphics), Icon(coordinateSystem(preserveAspectRatio = true, extent = {{-20, -120}, {20, 120}}, grid = {1, 1}), graphics={  Rectangle(extent=  {{-16, 120}, {15, -60}}, fillColor=  {215, 215, 215},
             fillPattern=                                                                                                    FillPattern.Backward, pattern=  LinePattern.None, lineColor=  {0, 0, 0}), Rectangle(extent=  {{-16, -90}, {15, -120}}, pattern=  LinePattern.None, lineColor=  {0, 0, 0}, fillColor=  {215, 215, 215},
             fillPattern=                                                                                                    FillPattern.Backward), Rectangle(extent=  {{-16, -51}, {15, -92}}, lineColor=  {0, 0, 0}, pattern=  LinePattern.None, fillColor=  {215, 215, 215},

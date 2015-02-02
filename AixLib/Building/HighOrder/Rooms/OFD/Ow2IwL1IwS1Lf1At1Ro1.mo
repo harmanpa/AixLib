@@ -115,7 +115,6 @@ equation
   end if;
   connect(outside_wall1.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-64.25, 24.2667}, {-80, 24.2667}, {-80, -40}, {-99.5, -40}}, color = {0, 0, 127}));
   connect(inside_wall2.port_outside, thermInsideWall2) annotation(Line(points = {{32, -64.25}, {32, -72}, {30, -72}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermInsideWall2, thermInsideWall2) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall1.port_outside, thermInsideWall1) annotation(Line(points = {{66.25, 4.00001}, {90, 4.00001}, {90, 10}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Ceiling.port_outside, thermCeiling) annotation(Line(points = {{22, 62.1}, {22, 70}, {90, 70}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall2.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-7.73333, 64.25}, {-7.73333, 68}, {-7.73333, 70}, {-80, 70}, {-80, -40}, {-99.5, -40}}, color = {0, 0, 127}, smooth = Smooth.None));

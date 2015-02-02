@@ -121,14 +121,12 @@ equation
   end if;
   connect(outside_wall1.WindSpeedPort, WindSpeedPort) annotation(Line(points={{-64.25,
           27.4667},{-72,27.4667},{-80,27.4667},{-80,-40},{-99.5,-40}},                                                                                        color = {0, 0, 127}));
-  connect(thermInsideWall2, thermInsideWall2) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall1.port_outside, thermInsideWall1) annotation(Line(points = {{64.3, 5}, {90, 5}, {90, 10}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall2.WindSpeedPort, WindSpeedPort) annotation(Line(points={{40.2667,
           62.2502},{40.2667,68},{40.2667,70},{-80,70},{-80,-40},{-99.5,-40}},                                                                                           color = {0, 0, 127}, smooth = Smooth.None));
   connect(GroundTemperature.y, Ground.T) annotation(Line(points = {{-41, -90}, {2, -90}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(infiltrationRate.port_a, thermOutside) annotation(Line(points = {{-68, 48}, {-80, 48}, {-80, 80}, {-90, 80}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall1.port_outside, thermOutside) annotation(Line(points = {{-64.25, 4}, {-80, 4}, {-80, 80}, {-90, 80}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermRoom, thermRoom) annotation(Line(points = {{-22, 20}, {-22, 20}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(starRoom, thermStar_Demux.star) annotation(Line(points = {{20, 20}, {20, 4}, {-14.2, 4}, {-14.2, -15.6}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(outside_wall2.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points={{19,52},
           {19,52},{19,40},{-40,40},{-40,-40},{-20.1,-40},{-20.1,-35.4}},                                                                                                    color = {191, 0, 0}, smooth = Smooth.None));
@@ -136,7 +134,6 @@ equation
           63.5002},{45.5833,80.7501},{50.5,80.7501},{50.5,99}},                                                                                                    color = {255, 128, 0}, smooth = Smooth.None));
   connect(SolarRadiationPort_OW1, outside_wall1.SolarRadiationPort) annotation(Line(points={{-99.5,
           30},{-80,30},{-80,33.3333},{-65.5,33.3333}},                                                                                                   color = {255, 128, 0}, smooth = Smooth.None));
-  connect(thermOutside, thermOutside) annotation(Line(points = {{-90, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall2.port_outside, thermInsideWall2) annotation(Line(points = {{16, -64.2}, {16, -75.45}, {30, -75.45}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall1.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{52, 5}, {50, 6}, {40, 6}, {40, -40}, {-20.1, -40}, {-20.1, -35.4}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Ceiling.port_outside, thermCeiling) annotation(Line(points={{-30,

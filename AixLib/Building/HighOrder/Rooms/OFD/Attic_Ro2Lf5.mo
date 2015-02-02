@@ -98,7 +98,6 @@ protected
 equation
   connect(SolarRadiationPort_RO1, roof1.SolarRadiationPort) annotation(Line(points = {{-45.5, 100}, {-45.5, 80}, {-14.4167, 80}, {-14.4167, 65.5}}, color = {255, 128, 0}, smooth = Smooth.None));
   connect(SolarRadiationPort_RO2, roof2.SolarRadiationPort) annotation(Line(points = {{48, 100}, {48, 80}, {71.75, 80}, {71.75, 65.5}}, color = {255, 128, 0}, smooth = Smooth.None));
-  connect(thermOutside, thermOutside) annotation(Line(points = {{-90, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(roof1.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-19.7333, 64.25}, {-19.7333, 80}, {-80, 80}, {-80, 0}, {-99.5, 0}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(roof2.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{66.8, 64.25}, {66.8, 80}, {-80, 80}, {-80, 0}, {-99.5, 0}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(floorRoom1.port_outside, thermRoom1) annotation(Line(points = {{-60, -42.1}, {-60, -90}, {-90, -90}}, color = {191, 0, 0}, smooth = Smooth.None));

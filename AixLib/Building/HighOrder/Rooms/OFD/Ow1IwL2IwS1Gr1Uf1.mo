@@ -111,7 +111,6 @@ equation
     connect(floor.port_outside, Ground.port) annotation(Line(points = {{-27, -62.1}, {-27, -90}, {-2, -90}}, color = {191, 0, 0}, smooth = Smooth.None, pattern = LinePattern.Dash));
     connect(floor.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{-27, -58}, {-27, -40}, {-20.1, -40}, {-20.1, -35.4}}, color = {191, 0, 0}, smooth = Smooth.None, pattern = LinePattern.Dash));
   end if;
-  connect(thermInsideWall3, thermInsideWall3) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(GroundTemperature.y, Ground.T) annotation(Line(points = {{-39, -90}, {-30, -90}, {-30, -90}, {-24, -90}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(Tair.port, airload.port) annotation(Line(points = {{24, -13}, {24, -40}, {-6, -40}, {-6, -12}, {1, -12}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(starRoom, thermStar_Demux.star) annotation(Line(points = {{20, 20}, {20, 4}, {-14.2, 4}, {-14.2, -15.6}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
@@ -136,7 +135,6 @@ equation
   connect(AirExchangePort, NaturalVentilation.InPort1) annotation(Line(points = {{-100, -19.5}, {-80, -19.5}, {-80, -46.4}, {-67, -46.4}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(NaturalVentilation.port_a, thermOutside) annotation(Line(points = {{-68, -40}, {-80, -40}, {-80, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(NaturalVentilation.port_b, airload.port) annotation(Line(points = {{-48, -40}, {-6, -40}, {-6, -12}, {1, -12}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermCeiling, thermCeiling) annotation(Line(points = {{90, 70}, {85, 70}, {85, 70}, {90, 70}}, color = {191, 0, 0}, smooth = Smooth.None));
   annotation(__Dymola_Images(Parameters(source = "AixLib/Images/House/1OW_2IWl_2IWs_1Gr_Pa.png", Width = 5, Length = 5)), Icon(graphics={  Rectangle(extent=  {{6, 65}, {-6, -65}}, lineColor=  {0, 0, 0}, fillColor=  {215, 215, 215},
             fillPattern=                                                                                                    FillPattern.Solid, origin=  {74, -3}, rotation=  180), Rectangle(extent=  {{-60, 68}, {68, -68}}, lineColor=  {0, 0, 0}, fillColor=  {47, 102, 173},
             fillPattern=                                                                                                    FillPattern.Solid), Rectangle(extent=  {{-80, 68}, {-60, -80}}, lineColor=  {0, 0, 0}, fillColor=  {215, 215, 215},

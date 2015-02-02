@@ -92,7 +92,6 @@ equation
   connect(Bathroom.ThermRoom, ThermBath) annotation(Line(points = {{6.464, -55.584}, {6.464, -30}, {-12, -30}, {-12, -20}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Bathroom.StarRoom, StarBath) annotation(Line(points = {{12.24, -55.888}, {12.24, -44}, {6, -44}, {6, -30}, {8, -30}, {8, -20}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(Kitchen.StarRoom, StarKitchen) annotation(Line(points = {{63.808, -53.392}, {58, -53.392}, {58, -14}, {70, -14}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
-  connect(ThermBath, ThermBath) annotation(Line(points = {{-12, -20}, {-12, -20}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Livingroom.AirExchangePort, AirExchangePort[1]) annotation(Line(points = {{-64.9412, 65.8667}, {-80, 65.8667}, {-80, 90}, {-9, 90}, {-9, 127}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(Children.AirExchangePort, AirExchangePort[2]) annotation(Line(points = {{36, 71.44}, {20, 71.44}, {20, 90}, {-9, 90}, {-9, 121}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(Children.ThermRoom, ThermChildren) annotation(Line(points = {{48.768, 61.712}, {46, 61.712}, {46, 32}, {48, 32}}, color = {191, 0, 0}, smooth = Smooth.None));

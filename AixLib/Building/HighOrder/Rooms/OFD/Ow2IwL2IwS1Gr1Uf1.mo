@@ -118,11 +118,8 @@ equation
     connect(floor.port_outside, Ground.port) annotation(Line(points = {{-27, -62.1}, {-27, -90}, {-4, -90}}, color = {191, 0, 0}, smooth = Smooth.None, pattern = LinePattern.Dash));
     connect(floor.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{-27, -58}, {-27, -40}, {-20.1, -40}, {-20.1, -38}, {-20.1, -35.4}}, color = {191, 0, 0}, smooth = Smooth.None, pattern = LinePattern.Dash));
   end if;
-  connect(thermInsideWall2, thermInsideWall2) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(GroundTemperature.y, Ground.T) annotation(Line(points = {{-39, -90}, {-30, -90}, {-30, -90}, {-26, -90}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(WindSpeedPort, outside_wall2.WindSpeedPort) annotation(Line(points = {{-99.5, -40}, {-80, -40}, {-80, 74}, {42.8, 74}, {42.8, 64.25}}, color = {0, 0, 127}, smooth = Smooth.None));
-  connect(thermRoom, thermRoom) annotation(Line(points = {{-20, 20}, {-20, 20}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermOutside, thermOutside) annotation(Line(points = {{-90, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(thermOutside, outside_wall1.port_outside) annotation(Line(points = {{-90, 90}, {-90, 82}, {-80, 82}, {-80, 6}, {-68, 6}, {-68, 7}, {-64.25, 7}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall1.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-64.25, 28.2667}, {-80, 28.2667}, {-80, -40}, {-99.5, -40}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(inside_wall1b.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{58, -15}, {52, -15}, {52, -40}, {-20, -40}, {-20, -38}, {-20.1, -35.4}}, color = {191, 0, 0}, smooth = Smooth.None));
@@ -147,7 +144,6 @@ equation
   connect(NaturalVentilation.port_a, thermOutside) annotation(Line(points = {{-68, -40}, {-80, -40}, {-80, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(NaturalVentilation.InPort1, AirExchangePort) annotation(Line(points = {{-67, -46.4}, {-80, -46.4}, {-80, 74}, {-20, 74}, {-20, 100}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(NaturalVentilation.port_b, airload.port) annotation(Line(points = {{-48, -40}, {-6, -40}, {-6, -12}, {1, -12}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermInsideWall1b, thermInsideWall1b) annotation(Line(points = {{90, -10}, {85, -10}, {85, -10}, {90, -10}}, color = {191, 0, 0}, smooth = Smooth.None));
   annotation(__Dymola_Images(Parameters(source = "AixLib/Images/House/2OW_2IWl_1IWs_1Gr_Pa.png", Width = 5, Length = 5)), Icon(graphics={  Rectangle(extent=  {{-6, -46}, {6, 46}}, lineColor=  {0, 0, 0}, fillColor=  {215, 215, 215},
             fillPattern=                                                                                                    FillPattern.Solid, origin=  {74, -22}, rotation=  0, radius=  0), Rectangle(extent=  {{-80, 80}, {80, 60}}, lineColor=  {0, 0, 0}, fillColor=  {215, 215, 215},
             fillPattern=                                                                                                    FillPattern.Solid), Rectangle(extent=  {{25, 10}, {-25, -10}}, lineColor=  {0, 0, 0}, fillColor=  {170, 213, 255},

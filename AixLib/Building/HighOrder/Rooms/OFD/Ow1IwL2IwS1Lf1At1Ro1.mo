@@ -114,12 +114,10 @@ equation
   connect(outside_wall1.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-64.25, 26.2667}, {-80, 26.2667}, {-80, -50}, {-99.5, -50}}, color = {0, 0, 127}));
   connect(outside_wall1.SolarRadiationPort, SolarRadiationPort_OW1) annotation(Line(points = {{-65.5, 31.5833}, {-80, 31.5833}, {-80, 30}, {-99.5, 30}}, color = {0, 0, 0}));
   connect(inside_wall3.port_outside, thermInsideWall3) annotation(Line(points = {{20, -64.2}, {20, -74}, {30, -74}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermInsideWall3, thermInsideWall3) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Ceiling.port_outside, thermCeiling) annotation(Line(points = {{28, 62.1}, {28, 72}, {92, 72}, {92, 50}, {90, 50}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall2b.port_outside, thermInsideWall2b) annotation(Line(points = {{64.15, -20}, {90, -20}, {90, -30}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall2a.port_outside, thermInsideWall2a) annotation(Line(points = {{64.15, 19}, {84, 19}, {84, 20}, {90, 20}, {90, 10}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inner_wall1.port_outside, thermInsideWall1) annotation(Line(points = {{-14, 62.2}, {-14, 90}, {-10, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermOutside, thermOutside) annotation(Line(points = {{-90, 90}, {-90, 84}, {-90, 84}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(airload.port, Tair.port) annotation(Line(points = {{1, -12}, {-6, -12}, {-6, -40}, {24, -40}, {24, -13}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(infiltrationRate.port_a, thermOutside) annotation(Line(points = {{-72, 56}, {-72, 56}, {-80, 56}, {-80, 82}, {-90, 82}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall1.port_outside, thermOutside) annotation(Line(points = {{-64.25, 5}, {-80, 5}, {-80, 82}, {-90, 82}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));

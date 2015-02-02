@@ -75,7 +75,6 @@ equation
   connect(Wall_Bedroom.port_outside, thermBedroom) annotation(Line(points = {{-45, -48.2}, {-45, -56}, {-86, -56}, {-86, -20}, {-150, -20}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Wall_Neighbour.port_outside, thermNeighbour) annotation(Line(points = {{-80.3, 15}, {-86, 15}, {-86, 10}, {-150, 10}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(infiltrationRate.port_a, thermOutside) annotation(Line(points = {{-72, -71}, {-86, -71}, {-86, 130}, {-150, 130}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(ThermRoom, ThermRoom) annotation(Line(points = {{-2, 14}, {-7, 14}, {-7, 14}, {-2, 14}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(thermStar_Demux.star, StarInside1) annotation(Line(points = {{13.6, -8.2}, {13.6, 3.2}, {26, 3.2}, {26, 14}}, color = {95, 95, 95}, pattern = LinePattern.None, smooth = Smooth.None));
   connect(Wall_Children.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{68, 14}, {54, 14}, {54, -32}, {33.4, -32}, {33.4, -14.1}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(Wall_Corridor.thermStarComb_inside, thermStar_Demux.thermStarComb) annotation(Line(points = {{19, -38}, {19, -32}, {33.4, -32}, {33.4, -14.1}}, color = {191, 0, 0}, smooth = Smooth.None));

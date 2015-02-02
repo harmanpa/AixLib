@@ -63,7 +63,6 @@ equation
   // Be careful to set a given ventilation rate only for the windows, or for the doors, otherweise you will have double the ventilation rate.
   connect(SolarRadiationPort_RoofNW, roof1.SolarRadiationPort) annotation(Line(points = {{-45.5, 100}, {-45.5, 80}, {-16.3333, 80}, {-16.3333, 69.5}}, color = {255, 128, 0}, smooth = Smooth.None));
   connect(SolarRadiationPort_RoofSE, roof2.SolarRadiationPort) annotation(Line(points = {{48, 100}, {48, 80}, {75.6667, 80}, {75.6667, 69.5}}, color = {255, 128, 0}, smooth = Smooth.None));
-  connect(thermOutside, thermOutside) annotation(Line(points = {{-90, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(roof1.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-21.4667, 68.25}, {-21.4667, 80}, {-80, 80}, {-80, 0}, {-99.5, 0}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(roof2.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{70.5333, 68.25}, {70.5333, 80}, {-80, 80}, {-80, 0}, {-99.5, 0}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(infiltrationRate.port_a, thermOutside) annotation(Line(points = {{-64, -20}, {-80, -20}, {-80, 90}, {-90, 90}}, color = {191, 0, 0}, smooth = Smooth.None));

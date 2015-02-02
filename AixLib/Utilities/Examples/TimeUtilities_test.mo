@@ -13,7 +13,6 @@ equation
   realSamples[1] = hourOfDay.HOD;
   //Connection for night mode output
   boolNightMode = nightMode.IsNight.y;
-  connect(boolNightMode, boolNightMode) annotation(Line(points = {{66, -20}, {66, -20}}, color = {255, 0, 255}, smooth = Smooth.None));
   annotation(experiment(StopTime = 604800, Interval = 600), __Dymola_experimentSetupOutput, Diagram(coordinateSystem(preserveAspectRatio = false, extent = {{-100, -100}, {100, 100}}), graphics), Documentation(revisions = "<html>
  <p><ul>
  <li><i>April 25, 2013&nbsp;</i> by Ole Odendahl:<br/>Implemented model, added documentation and formatted appropriately</li>

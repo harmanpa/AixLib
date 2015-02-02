@@ -121,7 +121,6 @@ equation
   end if;
   connect(outside_wall1.SolarRadiationPort, SolarRadiationPort_OW1) annotation(Line(points = {{-65.5, 29.6667}, {-80, 29.6667}, {-80, 30}, {-99.5, 30}}, color = {0, 0, 0}));
   connect(inside_wall2.port_outside, thermInsideWall2) annotation(Line(points = {{28, -64.2}, {28, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
-  connect(thermInsideWall2, thermInsideWall2) annotation(Line(points = {{30, -90}, {30, -90}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(outside_wall2.WindSpeedPort, WindSpeedPort) annotation(Line(points = {{-0.8, 64.3}, {-0.8, 74}, {-80, 74}, {-80, -50}, {-99.5, -50}}, color = {0, 0, 127}, smooth = Smooth.None));
   connect(inside_wall1b.port_outside, thermInsideWall1b) annotation(Line(points = {{62.1, -19}, {90, -19}, {90, -30}}, color = {191, 0, 0}, smooth = Smooth.None));
   connect(inside_wall1a.port_outside, thermInsideWall1a) annotation(Line(points = {{62.1, 19}, {84, 19}, {84, 20}, {90, 20}, {90, 10}}, color = {191, 0, 0}, smooth = Smooth.None));
